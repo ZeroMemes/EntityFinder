@@ -34,7 +34,7 @@ func main() {
 		world = args[0]
 	} else {
 		fmt.Print("Enter the world directory: ")
-		fmt.Scan(&world)
+		fmt.Scanln(&world)
 	}
 
 	info, err := os.Stat(world)
